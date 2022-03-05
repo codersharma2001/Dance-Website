@@ -1,0 +1,63 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar.top.firstClass.secondClass
+       ul 
+           div#logo
+                img(src="/static/img/logo.png")
+                | MDA
+           li #[a(href="/") Home] 
+           li #[a(href="/") About] 
+           li #[a(href="/") Services] 
+           li #[a(href="/") Class Info] 
+           li #[a(href="/") Contact Us]
+
+    section#introSection 
+        div Welcome to Mayank's Dance Academy
+        div.small Eat Sleep Dance Repeat 
+
+    section#missionSection 
+        h2 Our Mission  
+        div.card 
+             h3 Dance Perfection
+             div.card-box 
+               div.card-img
+                 img(src="/static/img/1.png")
+
+               div.card-content
+                 p This is the best dance academy of the universe
+
+        div.card 
+             h3 Dance the way you like
+             div.card-box 
+               div.card-img
+                 img(src="/static/img/2.png")
+
+               div.card-content
+                 p This is the best dance academy of the universe
+
+        div.card 
+             h3 Expert Teaching
+             div.card-box 
+               div.card-img
+                 img(src="/static/img/3.png")
+
+               div.card-content
+                 p This is the best dance academy of the universe
+
+    section#sponsersSection 
+        h2 Our Sponsers 
+          div#sponsers
+            img(src="static/img/logo1.png", alt="Sponser Image" , class="spImage")
+            img(src="static/img/logo2.png", alt="Sponser Image" , class="spImage")
+            img(src="static/img/logo3.png", alt="Sponser Image" , class="spImage")
+            img(src="static/img/logo4.png", alt="Sponser Image" , class="spImage")
+
+    footer#footer 
+        | Copyright © 2022 mayankdanceacademy.com | All rights reserved
+    script
+      include ../static/index.js

@@ -1,0 +1,26 @@
+doctype html
+//- layout.pug
+
+html
+  head
+    title Mayank Dance Acedemy
+    block scripts
+    block style
+      script(src='/jquery.js')
+  body
+    nav#navbar.top.firstClass.secondClass
+       ul 
+           div#logo
+                img(src="/static/img/logo.png")
+                | MDA
+           li #[a(href="/") Home] 
+           li #[a(href="/") About] 
+           li #[a(href="/") Services] 
+           li #[a(href="/") Class Info] 
+           li #[a(href="/contact") Contact Us]
+
+    block content
+    //- footer#footer 
+    //-     | Copyright © 2022 mayankdanceacademy.com | All rights reserved
+    footer#footer 
+        | Copyright © 2022 mayankdanceacademy.com | All rights reserved
